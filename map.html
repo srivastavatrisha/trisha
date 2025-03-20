@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+    <style>
+       *{
+            margin: 5px; 
+        }
+        body{
+            text-align: center;
+        }
+        img{
+            width:50%;
+            height: auto;
+ 
+        }
+    </style>
+</head>
+<body>
+ 
+    <h1>Image Map Example</h1>
+    
+    <img src="th.jpeg" alt="Sample Image" usemap="#imagemap">
+ 
+    <map name="imagemap">
+        
+        <area shape="rect" coords="34,44,270,350" alt="Area 1"                                                                                                		href="https://example.com/area1" target="_blank">
+        <area shape="circle" coords="337,300,44" alt="Area 2" href="https://example.com/area2" target="_blank">
+        <area shape="poly" coords="450,150,470,200,500,180" alt="Area 3" href="https://example.com/area3" target="_blank">
+    </map>
+ 
+</body>
+</html>

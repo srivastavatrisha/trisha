@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.external-style {
+    color: black;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.last{
+    text-align: center;
+}
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types Demo</title>
+    <!-- Link to External CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: rgb(172, 146, 182);
+            font-family:'Courier New', Courier, monospace;
+        }
+ 
+        h1 {
+            color: rgb(103, 119, 110);
+        }
+ 
+        .internal-style {
+            color: white;
+            background-color: rgb(155, 99, 130);
+            padding: 20px;
+            border-radius: 10px;
+        }
+ 
+        .example-container {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+ 
+<body>
+    <h1>Welcome to CSS Types  Page</h1>
+ 
+    <div class="example-container">
+        <div style="color: white; background-color: darkgoldenrod; padding: 20px; border-radius: 5px;">
+            <!-- Inline CSS -->
+            <p>This paragraph is styled using <strong>Inline CSS</strong>.</p>
+        </div>
+ 
+        <div class="internal-style">
+            <!-- Internal CSS -->
+            <p>This paragraph is styled using <strong>Internal CSS</strong>. </p>
+        </div>
+ 
+        <div class="external-style">
+                <p>This paragraph is styled using <strong>External CSS</strong>. </p>
+        </div>
+    </div>
+ 
+    <p class="last">This text is styled using the <strong>Internal CSS</strong> for the body and heading.</p>
+ 
+</body>
+</html>
+
+

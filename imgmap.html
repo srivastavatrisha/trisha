@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Coordinates from Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #coordinates {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+ 
+    <h1>Click  the Image to Get Coordinates</h1>
+    <p>Click anywhere on the image below to get the coordinates of the point you clicked.</p>
+ 
+    <img src="th.jpeg" alt="Sample Image" id="image">
+ 
+    <div id="coordinates">
+        <p><strong>Coordinates:</strong></p>
+        <p id="coordX">X: </p>
+        <p id="coordY">Y: </p>
+    </div>
+ 
+    <script>
+        // Get reference to the image and coordinate display elements
+        const image = document.getElementById('imgmap');
+        const coordX = document.getElementById('coordX');
+        const coordY = document.getElementById('coordY');
+ 
+        // Event listener for click on image
+        image.addEventListener('click', function(event) {
+            const rect = image.getBoundingClientRect();
+ 
+            // Calculate the coordinates relative to the image
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+ 
+            // Update the displayed coordinates
+            coordX.textContent = `X: ${x}`;
+            coordY.textContent = `Y: ${y}`;
+        });
+    </script>
+ 
+</body>
+</html>
